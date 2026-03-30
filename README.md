@@ -41,6 +41,7 @@ const queryExample: Query<User> = {
   name__icontains: "john", // ✅ Valid string lookup
   age__gte: 18, // ✅ Valid number lookup
   active__exact: true, // ✅ Valid boolean lookup
+  title__gt: "hello", // Type Error!
 }; 
 ```
 
@@ -73,42 +74,6 @@ A strongly-typed query object for model `T`. Supports nested lookups with double
 
 ```typescript
 type Query<T> = Partial<Record<NestedLookup<T, string>, any>>;
-```
-
-### `Lookup<T>`
-Infers appropriate lookup operations for a given field type.
-
-```typescript
-type Lookup<T> = T extends string
-  ? StringLookups
-  : T extends number
-  ? NumberLookups
-  : T extends boolean
-  ? BooleanLookups
-  : never;
-```
-
-### `NestedLookup<T, K>`
-Validates nested field paths with lookups (e.g., `user__name__icontains`).
-
-## Examples
-
-### Nested Queries
-```typescript
-interface Profile {
-  bio: string;
-  followerCount: number;
-}
-
-interface User {
-  name: string;
-  profile: Profile;
-}
-
-const nestedQuery: Query<User> = {
-  profile__bio__contains: "developer", // ✅ Validated nested lookup
-  profile__followerCount__gt: 1000, // ✅ Works with nested numbers
-};
 ```
 
 ### Type Validation
