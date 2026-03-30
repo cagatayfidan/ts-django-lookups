@@ -1,15 +1,15 @@
 {
   "name": "ts-django-lookups",
   "author": "Çağatay Fidan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "",
   "main": "index.ts",
   "scripts": {
     "build": "tsc",
-      "version:patch": "npm version patch",
-      "version:minor": "npm version minor",
-      "version:major": "npm version major"
+    "version:patch": "npm version patch",
+    "version:minor": "npm version minor",
+    "version:major": "npm version major"
   },
   "devDependencies": {
     "typescript": "6.0.2"
