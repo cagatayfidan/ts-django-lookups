@@ -12,7 +12,9 @@
     "access": "public",
     "provenance": true
   },
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "build": "tsc",
     "version:patch": "npm version patch",
