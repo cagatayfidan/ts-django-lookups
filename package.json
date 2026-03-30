@@ -4,6 +4,9 @@
   "version": "1.0.2",
   "type": "module",
   "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.ts",
   "scripts": {
     "build": "tsc",
