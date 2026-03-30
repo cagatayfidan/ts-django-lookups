@@ -134,5 +134,4 @@ const validQuery: Query<Post> = {
 
 ## License
 
-ISC
-
+MIT
