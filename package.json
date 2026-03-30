@@ -1,7 +1,7 @@
 {
   "name": "@cagatayfidan/ts-django-lookups",
   "author": "Çağatay Fidan",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "type": "module",
   "description": "",
   "publishConfig": {
