@@ -1,9 +1,13 @@
 {
-  "name": "gts-django-lookups",
   "author": "Çağatay Fidan",
+  "name": "ts-django-lookups",
+  "description": "TypeScript type definitions for Django-style query lookups. A zero-runtime, pure-TypeScript package that provides type-safe query building with automatic field validation and nested lookup support.",
   "version": "1.0.14",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cagatayfidan/ts-django-lookups.git"
+  },
   "type": "module",
-  "description": "",
   "publishConfig": {
     "access": "public",
     "provenance": true
